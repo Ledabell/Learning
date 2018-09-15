@@ -25,7 +25,6 @@ $ ruby main.rb
 
 # Table of Contents
 * [API Intro](#api-intro)
-* [License](#license)
 * [Author](#author)
 
 #### API Intro
@@ -47,11 +46,6 @@ def updateList(movie_name)
 .
 end
 ```
-___
-
-#### License
- [Auburn University](/LICENSE)
-
 ___
 
 ## Author
