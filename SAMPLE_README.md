@@ -29,8 +29,8 @@ $ ruby main.rb
 
 #### API Intro
 
-Some description 
-
+This class handles all aspects of the search suggestion list. That is,reading the previous searches from the data.txt file, 
+maintaining the list in chronologicl order of search, checking for duplicates, and saving the updated list to the file.
 ```
 Class SearchController
 .
@@ -38,10 +38,32 @@ Class SearchController
 end
 ```
 
-Some magical APIs are written by Author, like `updateList` API magically handles everything.
-
+This method calls the duplicate() function and if the movie_name given exists in the list, the movie is moved to the front 
+of the list. If it doesn't, it is added to the front of the list.
 ```
 def updateList(movie_name)	
+.
+.
+end
+```
+
+This method iterates through the updated search suggestion list, appends each movie to a string and saves that string to data.txt.
+```
+def saveListToFile()	
+.
+.
+end
+```
+Checks if the movie_name given already exists in the search suggestion list. Referenced by updateList(movie_name).
+```
+def duplicate(movie_name)	
+.
+.
+end
+```
+Iterates through the lines of data.txt and saves each movie name to the search suggestion list for that session.
+```
+def readFile()	
 .
 .
 end
